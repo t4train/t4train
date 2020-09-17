@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>T4Train</class>
+ <widget class="QMainWindow" name="T4Train">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>650</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>600</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   
+   <layout class="QVBoxLayout" name="MainVL">
+    <item>
+     <widget class="QWidget" name="topwidget">
+      <layout class="QGridLayout" name="TopGL">
+       <property name="sizeConstraint">
+        <enum>QLayout::SetDefaultConstraint</enum>
+       </property>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="GraphL">
+       <property name="sizeConstraint">
+        <enum>QLayout::SetDefaultConstraint</enum>
+       </property>
+     </layout>
+    </item>
+    <item>
+     <widget class="QWidget" name="footwidget">
+      <layout class="QGridLayout" name="FootGL">
+       <property name="sizeConstraint">
+        <enum>QLayout::SetDefaultConstraint</enum>
+       </property>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1000</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuAlgo">
+    <property name="title">
+     <string>ML Algorithm</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuFeat">
+    <property name="title">
+     <string>Featurization</string>
+    </property>
+   <widget class="QMenu" name="menuUser">
+    <property name="title">
+     <string>User Interface</string>
+    </property>
+   </widget>
+   </widget>
+   <!-- <widget class="QMenu" name="menuData">
+    <property name="title">
+     <string>Data Handler</string>
+    </property>
+   </widget> -->
+   <addaction name="menuFile"/>
+   <addaction name="menuAlgo"/>
+   <addaction name="menuFeat"/>
+   <addaction name="menuUser"/>
+   <!-- <addaction name="menuData"/> -->
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

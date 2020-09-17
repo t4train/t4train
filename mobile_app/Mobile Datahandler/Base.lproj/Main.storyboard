@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="50c-la-Xsn">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--T4Train Sensors-->
+        <scene sceneID="hM3-Df-ne3">
+            <objects>
+                <viewController id="XRE-xd-lG3" customClass="MainViewController" customModule="T4T" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7Ne-NI-Znl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="IhT-Re-bPl">
+                                <rect key="frame" x="0.0" y="140" width="414" height="487"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <sections/>
+                            </tableView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f6l-xp-1aW">
+                                <rect key="frame" x="0.0" y="627" width="414" height="269"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="240" id="HZx-tU-JOp"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="oEX-SU-n9X" kind="embed" id="VUq-8i-GBW"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="f6l-xp-1aW" firstAttribute="bottom" secondItem="5Ov-ZV-Hp4" secondAttribute="bottom" constant="34" id="2wf-DI-Hj9"/>
+                            <constraint firstItem="5Ov-ZV-Hp4" firstAttribute="trailing" secondItem="f6l-xp-1aW" secondAttribute="trailing" id="EdU-V8-MXW"/>
+                            <constraint firstItem="f6l-xp-1aW" firstAttribute="leading" secondItem="5Ov-ZV-Hp4" secondAttribute="leading" id="Pmw-D3-YKM"/>
+                            <constraint firstItem="f6l-xp-1aW" firstAttribute="top" secondItem="IhT-Re-bPl" secondAttribute="bottom" id="dkr-6M-jGU"/>
+                            <constraint firstItem="f6l-xp-1aW" firstAttribute="height" secondItem="7Ne-NI-Znl" secondAttribute="height" multiplier="0.3" priority="999" id="gMk-5D-Dxo"/>
+                            <constraint firstItem="IhT-Re-bPl" firstAttribute="leading" secondItem="5Ov-ZV-Hp4" secondAttribute="leading" id="mYS-W6-Ihl"/>
+                            <constraint firstItem="5Ov-ZV-Hp4" firstAttribute="trailing" secondItem="IhT-Re-bPl" secondAttribute="trailing" id="vTm-bb-ODf"/>
+                            <constraint firstItem="IhT-Re-bPl" firstAttribute="top" secondItem="5Ov-ZV-Hp4" secondAttribute="top" id="yGJ-as-xsc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5Ov-ZV-Hp4"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="T4Train Sensors" id="deP-0N-eVB"/>
+                    <connections>
+                        <outlet property="tableView" destination="IhT-Re-bPl" id="rmM-7O-FpS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AVN-GE-vQN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="147.82608695652175" y="612.72321428571422"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="iTU-Nt-MyW">
+            <objects>
+                <navigationController id="50c-la-Xsn" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="5Ot-1J-OLv">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="XRE-xd-lG3" kind="relationship" relationship="rootViewController" id="HKZ-IA-1aH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qfX-N7-eNR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-660" y="613"/>
+        </scene>
+        <!--Connection View Controller-->
+        <scene sceneID="hyJ-RC-A8d">
+            <objects>
+                <viewController id="oEX-SU-n9X" customClass="ConnectionViewController" customModule="T4T" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9C8-9c-0Ao">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="269"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="252" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="kdr-zW-ozD">
+                                <rect key="frame" x="16" y="16" width="382" height="32"/>
+                                <segments>
+                                    <segment title="UDP"/>
+                                    <segment title="Bluetooth LE"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentChanged:" destination="oEX-SU-n9X" eventType="valueChanged" id="vNq-kX-RpJ"/>
+                                </connections>
+                            </segmentedControl>
+                            <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="243" axis="vertical" distribution="equalSpacing" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="6Mw-gf-gzq">
+                                <rect key="frame" x="8" y="85.5" width="398" height="98.5"/>
+                                <subviews>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="Nht-6B-Pbw">
+                                        <rect key="frame" x="189" y="0.0" width="20" height="20"/>
+                                    </activityIndicatorView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bluetooth connected" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OcN-qH-CMa">
+                                        <rect key="frame" x="119" y="32" width="160" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="wla-Hj-nfe">
+                                        <rect key="frame" x="60.5" y="64.5" width="277" height="34"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="jYP-zP-YxD">
+                                                <rect key="frame" x="0.0" y="0.0" width="277" height="34"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="T4T IP Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n0f-q8-jzS">
+                                                        <rect key="frame" x="0.0" y="0.0" width="116" height="34"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="10.0.0.33" borderStyle="roundedRect" placeholder="T4T IP Address" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="BW3-3T-CCx">
+                                                        <rect key="frame" x="124" y="0.0" width="153" height="34"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ucS-IU-dBh">
+                                <rect key="frame" x="148.5" y="196" width="117" height="30"/>
+                                <state key="normal" title="Retry connecting"/>
+                                <connections>
+                                    <action selector="retryConnectingPressed:" destination="oEX-SU-n9X" eventType="touchUpInside" id="3F9-tV-CtC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGray6Color" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="6Mw-gf-gzq" secondAttribute="trailing" constant="8" id="03U-kb-D1f"/>
+                            <constraint firstItem="Nht-6B-Pbw" firstAttribute="top" relation="greaterThanOrEqual" secondItem="kdr-zW-ozD" secondAttribute="bottom" priority="999" constant="8" id="48d-XB-5t5"/>
+                            <constraint firstItem="ucS-IU-dBh" firstAttribute="centerX" secondItem="B6M-JU-t8o" secondAttribute="centerX" id="4E3-4B-Zwh"/>
+                            <constraint firstAttribute="trailing" secondItem="kdr-zW-ozD" secondAttribute="trailing" constant="16" id="EJO-oz-R57"/>
+                            <constraint firstItem="kdr-zW-ozD" firstAttribute="top" secondItem="9C8-9c-0Ao" secondAttribute="top" constant="16" id="FaK-lC-XHK"/>
+                            <constraint firstItem="ucS-IU-dBh" firstAttribute="top" secondItem="n0f-q8-jzS" secondAttribute="bottom" constant="12" id="IiR-ly-Qi8"/>
+                            <constraint firstItem="6Mw-gf-gzq" firstAttribute="leading" secondItem="9C8-9c-0Ao" secondAttribute="leading" constant="8" id="Vej-Jd-rba"/>
+                            <constraint firstItem="kdr-zW-ozD" firstAttribute="leading" secondItem="9C8-9c-0Ao" secondAttribute="leading" constant="16" id="qDJ-fb-MUG"/>
+                            <constraint firstItem="6Mw-gf-gzq" firstAttribute="centerY" secondItem="9C8-9c-0Ao" secondAttribute="centerY" priority="998" id="smv-K3-stx"/>
+                            <constraint firstItem="B6M-JU-t8o" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="ucS-IU-dBh" secondAttribute="bottom" priority="999" constant="12" id="t1S-Nn-QJZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="B6M-JU-t8o"/>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="Nht-6B-Pbw" id="xR0-X7-F7F"/>
+                        <outlet property="connectionSegment" destination="kdr-zW-ozD" id="le0-Am-VHa"/>
+                        <outlet property="ipTextField" destination="BW3-3T-CCx" id="X63-oS-6pY"/>
+                        <outlet property="retryButton" destination="ucS-IU-dBh" id="aKb-Gr-iPD"/>
+                        <outlet property="statusLabel" destination="OcN-qH-CMa" id="mwN-EN-yZQ"/>
+                        <outlet property="udpStack" destination="jYP-zP-YxD" id="RAX-Q0-oFR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oPC-NN-w7N" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="932" y="794"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,437 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D1FC3EC2491315700F0240E /* SensorBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1FC3EB2491315700F0240E /* SensorBuffer.swift */; };
+		3D54230D24845DD20077E30C /* BluetoothViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D54230B24845DD20077E30C /* BluetoothViewController.swift */; };
+		3D54230E24845DD20077E30C /* BluetoothViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D54230C24845DD20077E30C /* BluetoothViewController.xib */; };
+		3D59D0EF248C4689009A9EFC /* BTPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D59D0ED248C4689009A9EFC /* BTPManager.swift */; };
+		3D6C01662481EBAC00035EC9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6C01652481EBAC00035EC9 /* AppDelegate.swift */; };
+		3D6C016A2481EBAC00035EC9 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6C01692481EBAC00035EC9 /* MainViewController.swift */; };
+		3D6C016D2481EBAC00035EC9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D6C016B2481EBAC00035EC9 /* Main.storyboard */; };
+		3D6C016F2481EBAF00035EC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D6C016E2481EBAF00035EC9 /* Assets.xcassets */; };
+		3D6C01722481EBAF00035EC9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D6C01702481EBAF00035EC9 /* LaunchScreen.storyboard */; };
+		3D6C017C2481EC1300035EC9 /* AccelerometerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6C017A2481EC1300035EC9 /* AccelerometerViewController.swift */; };
+		3D6C017D2481EC1300035EC9 /* AccelerometerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D6C017B2481EC1300035EC9 /* AccelerometerViewController.xib */; };
+		3D6C017F2481ED1700035EC9 /* DataHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6C017E2481ED1700035EC9 /* DataHandling.swift */; };
+		3D6C01822481EF8500035EC9 /* GyroscopeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6C01802481EF8500035EC9 /* GyroscopeViewController.swift */; };
+		3D6C01832481EF8500035EC9 /* GyroscopeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D6C01812481EF8500035EC9 /* GyroscopeViewController.xib */; };
+		3D6C01862481F06300035EC9 /* DataHandlerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6C01842481F06300035EC9 /* DataHandlerCell.swift */; };
+		3D6C01872481F06300035EC9 /* DataHandlerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D6C01852481F06300035EC9 /* DataHandlerCell.xib */; };
+		3D87D3DA24B505820043CCAB /* UDPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D87D3D924B505820043CCAB /* UDPManager.swift */; };
+		3D87D3DC24B524C70043CCAB /* ConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D87D3DB24B524C70043CCAB /* ConnectionManager.swift */; };
+		3D87D3DE24B52F700043CCAB /* ConnectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D87D3DD24B52F700043CCAB /* ConnectionViewController.swift */; };
+		3D87D3E124B537280043CCAB /* KeyboardAvoiding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D87D3DF24B537280043CCAB /* KeyboardAvoiding.swift */; };
+		3D87D3E224B537280043CCAB /* KeyboardDismissingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D87D3E024B537280043CCAB /* KeyboardDismissingView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3D1FC3EB2491315700F0240E /* SensorBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorBuffer.swift; sourceTree = "<group>"; };
+		3D54230B24845DD20077E30C /* BluetoothViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothViewController.swift; sourceTree = "<group>"; };
+		3D54230C24845DD20077E30C /* BluetoothViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BluetoothViewController.xib; sourceTree = "<group>"; };
+		3D59D0ED248C4689009A9EFC /* BTPManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTPManager.swift; sourceTree = "<group>"; };
+		3D6C01622481EBAC00035EC9 /* T4T.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = T4T.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D6C01652481EBAC00035EC9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3D6C01692481EBAC00035EC9 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		3D6C016C2481EBAC00035EC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3D6C016E2481EBAF00035EC9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3D6C01712481EBAF00035EC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3D6C01732481EBAF00035EC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D6C017A2481EC1300035EC9 /* AccelerometerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccelerometerViewController.swift; sourceTree = "<group>"; };
+		3D6C017B2481EC1300035EC9 /* AccelerometerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccelerometerViewController.xib; sourceTree = "<group>"; };
+		3D6C017E2481ED1700035EC9 /* DataHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataHandling.swift; sourceTree = "<group>"; };
+		3D6C01802481EF8500035EC9 /* GyroscopeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GyroscopeViewController.swift; sourceTree = "<group>"; };
+		3D6C01812481EF8500035EC9 /* GyroscopeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GyroscopeViewController.xib; sourceTree = "<group>"; };
+		3D6C01842481F06300035EC9 /* DataHandlerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataHandlerCell.swift; sourceTree = "<group>"; };
+		3D6C01852481F06300035EC9 /* DataHandlerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DataHandlerCell.xib; sourceTree = "<group>"; };
+		3D87D3D924B505820043CCAB /* UDPManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UDPManager.swift; sourceTree = "<group>"; };
+		3D87D3DB24B524C70043CCAB /* ConnectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionManager.swift; sourceTree = "<group>"; };
+		3D87D3DD24B52F700043CCAB /* ConnectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionViewController.swift; sourceTree = "<group>"; };
+		3D87D3DF24B537280043CCAB /* KeyboardAvoiding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardAvoiding.swift; sourceTree = "<group>"; };
+		3D87D3E024B537280043CCAB /* KeyboardDismissingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardDismissingView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3D6C015F2481EBAC00035EC9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3D6C01592481EBAC00035EC9 = {
+			isa = PBXGroup;
+			children = (
+				3D6C01642481EBAC00035EC9 /* Mobile Datahandler */,
+				3D6C01632481EBAC00035EC9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3D6C01632481EBAC00035EC9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D6C01622481EBAC00035EC9 /* T4T.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3D6C01642481EBAC00035EC9 /* Mobile Datahandler */ = {
+			isa = PBXGroup;
+			children = (
+				3D6C01652481EBAC00035EC9 /* AppDelegate.swift */,
+				3D6C01692481EBAC00035EC9 /* MainViewController.swift */,
+				3D6C016B2481EBAC00035EC9 /* Main.storyboard */,
+				3D87D3DD24B52F700043CCAB /* ConnectionViewController.swift */,
+				3D87D3DB24B524C70043CCAB /* ConnectionManager.swift */,
+				3D59D0ED248C4689009A9EFC /* BTPManager.swift */,
+				3D87D3D924B505820043CCAB /* UDPManager.swift */,
+				3D1FC3EB2491315700F0240E /* SensorBuffer.swift */,
+				3D87D3E324B5372E0043CCAB /* Copied CocoaPod */,
+				3D6C01882481F06900035EC9 /* Table UI */,
+				3D6C01792481EBB900035EC9 /* Data Handling Controllers */,
+				3D6C016E2481EBAF00035EC9 /* Assets.xcassets */,
+				3D6C01702481EBAF00035EC9 /* LaunchScreen.storyboard */,
+				3D6C01732481EBAF00035EC9 /* Info.plist */,
+			);
+			path = "Mobile Datahandler";
+			sourceTree = "<group>";
+		};
+		3D6C01792481EBB900035EC9 /* Data Handling Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3D6C017E2481ED1700035EC9 /* DataHandling.swift */,
+				3D6C017A2481EC1300035EC9 /* AccelerometerViewController.swift */,
+				3D6C017B2481EC1300035EC9 /* AccelerometerViewController.xib */,
+				3D6C01802481EF8500035EC9 /* GyroscopeViewController.swift */,
+				3D6C01812481EF8500035EC9 /* GyroscopeViewController.xib */,
+				3D7878FE24968146005506A3 /* Incomplete */,
+			);
+			path = "Data Handling Controllers";
+			sourceTree = "<group>";
+		};
+		3D6C01882481F06900035EC9 /* Table UI */ = {
+			isa = PBXGroup;
+			children = (
+				3D6C01842481F06300035EC9 /* DataHandlerCell.swift */,
+				3D6C01852481F06300035EC9 /* DataHandlerCell.xib */,
+			);
+			path = "Table UI";
+			sourceTree = "<group>";
+		};
+		3D7878FE24968146005506A3 /* Incomplete */ = {
+			isa = PBXGroup;
+			children = (
+				3D54230B24845DD20077E30C /* BluetoothViewController.swift */,
+				3D54230C24845DD20077E30C /* BluetoothViewController.xib */,
+			);
+			name = Incomplete;
+			sourceTree = "<group>";
+		};
+		3D87D3E324B5372E0043CCAB /* Copied CocoaPod */ = {
+			isa = PBXGroup;
+			children = (
+				3D87D3DF24B537280043CCAB /* KeyboardAvoiding.swift */,
+				3D87D3E024B537280043CCAB /* KeyboardDismissingView.swift */,
+			);
+			path = "Copied CocoaPod";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3D6C01612481EBAC00035EC9 /* Mobile Datahandler */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D6C01762481EBAF00035EC9 /* Build configuration list for PBXNativeTarget "Mobile Datahandler" */;
+			buildPhases = (
+				3D6C015E2481EBAC00035EC9 /* Sources */,
+				3D6C015F2481EBAC00035EC9 /* Frameworks */,
+				3D6C01602481EBAC00035EC9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Mobile Datahandler";
+			productName = "Mobile Datahandler";
+			productReference = 3D6C01622481EBAC00035EC9 /* T4T.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3D6C015A2481EBAC00035EC9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "Omar Al-Ejel";
+				TargetAttributes = {
+					3D6C01612481EBAC00035EC9 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = 3D6C015D2481EBAC00035EC9 /* Build configuration list for PBXProject "Mobile Datahandler" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3D6C01592481EBAC00035EC9;
+			productRefGroup = 3D6C01632481EBAC00035EC9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3D6C01612481EBAC00035EC9 /* Mobile Datahandler */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3D6C01602481EBAC00035EC9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D54230E24845DD20077E30C /* BluetoothViewController.xib in Resources */,
+				3D6C01872481F06300035EC9 /* DataHandlerCell.xib in Resources */,
+				3D6C01722481EBAF00035EC9 /* LaunchScreen.storyboard in Resources */,
+				3D6C016F2481EBAF00035EC9 /* Assets.xcassets in Resources */,
+				3D6C017D2481EC1300035EC9 /* AccelerometerViewController.xib in Resources */,
+				3D6C016D2481EBAC00035EC9 /* Main.storyboard in Resources */,
+				3D6C01832481EF8500035EC9 /* GyroscopeViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3D6C015E2481EBAC00035EC9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D87D3DE24B52F700043CCAB /* ConnectionViewController.swift in Sources */,
+				3D59D0EF248C4689009A9EFC /* BTPManager.swift in Sources */,
+				3D87D3DC24B524C70043CCAB /* ConnectionManager.swift in Sources */,
+				3D6C01822481EF8500035EC9 /* GyroscopeViewController.swift in Sources */,
+				3D6C016A2481EBAC00035EC9 /* MainViewController.swift in Sources */,
+				3D87D3E224B537280043CCAB /* KeyboardDismissingView.swift in Sources */,
+				3D1FC3EC2491315700F0240E /* SensorBuffer.swift in Sources */,
+				3D6C01862481F06300035EC9 /* DataHandlerCell.swift in Sources */,
+				3D6C01662481EBAC00035EC9 /* AppDelegate.swift in Sources */,
+				3D6C017C2481EC1300035EC9 /* AccelerometerViewController.swift in Sources */,
+				3D87D3E124B537280043CCAB /* KeyboardAvoiding.swift in Sources */,
+				3D87D3DA24B505820043CCAB /* UDPManager.swift in Sources */,
+				3D54230D24845DD20077E30C /* BluetoothViewController.swift in Sources */,
+				3D6C017F2481ED1700035EC9 /* DataHandling.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3D6C016B2481EBAC00035EC9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D6C016C2481EBAC00035EC9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3D6C01702481EBAF00035EC9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D6C01712481EBAF00035EC9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3D6C01742481EBAF00035EC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3D6C01752481EBAF00035EC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3D6C01772481EBAF00035EC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "Mobile Datahandler/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.t4train.mobilehandler;
+				PRODUCT_NAME = T4T;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3D6C01782481EBAF00035EC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "Mobile Datahandler/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.t4train.mobilehandler;
+				PRODUCT_NAME = T4T;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3D6C015D2481EBAC00035EC9 /* Build configuration list for PBXProject "Mobile Datahandler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D6C01742481EBAF00035EC9 /* Debug */,
+				3D6C01752481EBAF00035EC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D6C01762481EBAF00035EC9 /* Build configuration list for PBXNativeTarget "Mobile Datahandler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D6C01772481EBAF00035EC9 /* Debug */,
+				3D6C01782481EBAF00035EC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3D6C015A2481EBAC00035EC9 /* Project object */;
+}
