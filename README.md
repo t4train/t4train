@@ -50,8 +50,6 @@ BLE (Bluetooth) connection (gyroscope and accelerometer).
 
 Mac, Linux, and Windows are all supported.
 
-//TODO: gifs?
-
 |                    Teensy                     |               Microphone                |                    Camera                     |                  iOS Mobile                   |
 | :-------------------------------------------: | :-------------------------------------: | :-------------------------------------------: | :-------------------------------------------: |
 | ![icon-teensy](readme_assets/icon-teensy.png) | ![icon-mic](readme_assets/icon-mic.png) | ![icon-camera](readme_assets/icon-camera.png) | ![icon-mobile](readme_assets/icon-mobile.png) |
@@ -92,7 +90,9 @@ After installing all of the general dependencies and dependencies for your chose
 data handler, run the following in T4Train's root directory to
 start the T4Train program:
 
-    $ python ui_qtui.py
+```
+$ python ui_qtui.py
+```
 
 ### Configurations
 
@@ -106,8 +106,10 @@ To change the labels, replace the list of labels in the _LABELS_ section of
 _config.ini_. For example, if you want your labels to be _fist_, _open_, and
 _thumbs up_, your _LABELS_ field in your _config.ini_ should look like this:
 
-    [GLOBAL]
-    LABELS: [fist, open, thumbs up]
+```
+[GLOBAL]
+LABELS: [fist, open, thumbs up]
+```
 
 #### Channels
 
@@ -116,8 +118,10 @@ replace the _CHANNELS_ field in your _config.ini_. For example, if you
 want to display three channels, your _CHANNELS_ section in your _config.ini_
 should look like this:
 
-    [GLOBAL]
-    CHANNELS: 3
+```
+[GLOBAL]
+CHANNELS: 3
+```
 
 Microphone currently only supports 2 channels.
 
@@ -126,30 +130,36 @@ Microphone currently only supports 2 channels.
 To change the machine learning algorithm you want to use during training and predicting,
 change the index of the algorithm in the _config.ini_ (zero indexed).
 
-    [GLOBAL]
-    CURR_ALGO_INDEX: 3
+```
+[GLOBAL]
+CURR_ALGO_INDEX: 3
+```
 
 #### Data Source
 
 To change the data handler file you want to use as a data source,
 change the index of the data handler in the _config.ini_ (zero indexed).
 
-    [DS]
-    DS_FILE_NUM    : 3
+```
+[DS]
+DS_FILE_NUM    : 3
+```
 
 #### Sampling Rate, Frame Length, Number of Bins
 
 For mobile data sources ONLY, you can change the sampling rate and frame length in
 _config.ini_:
 
-    [GLOBAL]
-    FRAME_LENGTH   : 3000
+```
+[GLOBAL]
+FRAME_LENGTH   : 3000
 
-    [DS]
-    SAMPLE_RATE   : 50
+[DS]
+SAMPLE_RATE   : 50
 
-    [ML]
-    NUM_BINS  : 750
+[ML]
+NUM_BINS  : 750
+```
 
 The sampling rate, frame length, and number of bins are hardcoded into other data source files to optimize
 the ML and UI, so changing these fields for Microphone or Teensy will not impact either.
