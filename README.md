@@ -6,7 +6,7 @@
 
 - [Overview](#Overview)
 - [Data Handlers in T4Trian](#Different-Data-Handlers-in-T4Trian)
-- [Videos](#Videos)
+<!-- - [Videos](#Videos) -->
 - [Setup](#Setup)
 - [Dependencies](#Dependencies)
 - [Interface](#Interface)
@@ -62,26 +62,6 @@ Mac, Linux, and Windows are all supported.
 | [Teensy](#Teensy-Data-Source) |   ✅    |  ✅   |  ✅   |      ✅      |
 | [Microphone](#microphone)     |   ✅    |  ✅   |  ✅   |      ✅      |
 | [Camera](#Camera)             |   ✅    |  ✅   |  ✅   |      ✅      |
-
-## Videos
-
-// TODO: video link
-
-#### Camera Demo
-
-<figure class="video_container">
-  <iframe src="https://drive.google.com/file/d/1bJUw4HpkiABhU_GpPMV81bRXt60gTDLR/view?usp=sharing" 
-  frameborder="0" allowfullscreen="true"> </iframe>
-</figure>
-
-#### Microphone Demo
-
-<figure class="video_container">
-  <iframe src="https://drive.google.com/file/d/1MEZZZUJ8FJJE6q5rud40iEGoMFUSW2Wv/view?usp=sharing" 
-  frameborder="0" allowfullscreen="true"> </iframe>
-</figure>
-
-#### Mobile Demo
 
 ## Setup
 
