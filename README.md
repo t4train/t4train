@@ -73,7 +73,7 @@ how to get T4Train running.
 
 ## Interface
 
-_ui_qtui.py_ uses Python's PyQt5 library to create the interface. The following is a screenshot of the interface with a configuration featuring the labels "wave," "shake," and "strike," 3 accelerometer input channels, and FFT data featurization:
+_ui.py_ uses Python's PyQt5 library to create the interface. The following is a screenshot of the interface with a configuration featuring the labels "wave," "shake," and "strike," 3 accelerometer input channels, and FFT data featurization:
 
 ![readme_assets/ui.png](readme_assets/ui.png)
 
@@ -92,12 +92,12 @@ data handler, run the following in T4Train's root directory to
 start the T4Train program:
 
 ```
-$ python ui_qtui.py
+$ python ui.py
 ```
 
 ### Configurations
 
-_config.ini_ is the config file that _ui_qtui.py_ parses to determine the different
+_config.ini_ is the config file that _ui.py_ parses to determine the different
 labels, channels, machine learning algorithm, data source, sampling rate, frame length,
 and number of bins you will be training.
 
@@ -182,10 +182,10 @@ To use the interface, there are several different controls:
 
 #### Up/Down for Label Selection
 
-_labels_qtui.py_ is a class that manages the labels from _config.ini_.
+_ui_labels.py_ is a class that manages the labels from _config.ini_.
 
 To select a different label, the user can use the up/down arrow keys. On
-_down_, _ui_qtui.py_ will call _move_down_ to highlight the label below the current
+_down_, _ui.py_ will call _move_down_ to highlight the label below the current
 selected label. Similarly, _move_up_ will be called on _up_.
 
     def move_down(self):
@@ -238,7 +238,7 @@ files with the format _trainingdata[label]_ with _[label]_ being the label name.
 After training, _ml.py_ will continuously read _tmpframe.npy_ and predict its
 label. The prediction will be written to _prediction.npy_.
 
-In the meantime, _ui_qtui.py_ will continuously read _prediction.npy_ and display
+In the meantime, _ui.py_ will continuously read _prediction.npy_ and display
 the prediction onto the interface.
 
 More specifically, when you hit **_t_**, the UI will append all the training data
@@ -352,7 +352,7 @@ function in _utils.py_:
 This function bins the data into the number of bins specified in _config.ini_ (for mobile only,
 fixed for other data sources), then applies the selected featurization method onto the binned data.
 Ths function featurizes the data on the ML side in _ml.py_, but also in the UI featurized plots in
-_ui_qtui.py_.
+_ui.py_.
 
 **\*IMPORTANT NOTE:** **DO NOT** featurize the data you collect differently from the data the program
 predicts from. This means that the featurization method should stay the same while collecting data
