@@ -53,6 +53,7 @@ Mac, Linux, and Windows are all supported.
 |                    Teensy                     |               Microphone                |                    Camera                     |                  iOS Mobile                   |
 | :-------------------------------------------: | :-------------------------------------: | :-------------------------------------------: | :-------------------------------------------: |
 | ![icon-teensy](readme_assets/icon-teensy.png) | ![icon-mic](readme_assets/icon-mic.png) | ![icon-camera](readme_assets/icon-camera.png) | ![icon-mobile](readme_assets/icon-mobile.png) |
+| ![icon-teensy](readme_assets/teensy_demo.gif) | ![icon-mic](readme_assets/mic_demo.gif) | ![icon-camera](readme_assets/camera_demo.gif) | ![icon-mobile](readme_assets/mobile_demo.gif) |
 
 | []()                          | Windows | macOS | Linux | Raspberry Pi |
 | :---------------------------- | :-----: | :---: | :---: | :----------: |
