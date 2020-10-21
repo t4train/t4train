@@ -138,13 +138,18 @@ CURR_ALGO_INDEX: 3
 
 #### Data Source
 
-To change the data handler file you want to use as a data source,
-change the index of the data handler in the _config.ini_ (zero indexed).
+To change the data source file you want to use as a data source,
+change the `DS_FILE_NUM` index of the data handler in the _config.ini_ (zero indexed).
+Note that the data source python script names listed after `DS_FILENAMES` can be modified to support
+newly created data sources.
 
 ```
 [DS]
+DS_FILENAMES   : [ds_camera, ds_teensy, ds_arduino, ds_microphone, ds_microphonewav, ds_mobile_udp, ds_mobile_ble]
 DS_FILE_NUM    : 3
 ```
+
+_In this case, `DS_FILE_NUM` sets the data source to `ds_microphone`_
 
 #### Sampling Rate, Frame Length, Number of Bins
 
